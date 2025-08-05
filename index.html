@@ -1064,7 +1064,7 @@ input, textarea, select {
             <select id="paymentMethod" class="form-control" required style="padding: 0.8rem 1rem; background: white; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; appearance: none; width: 100%; color: var(--mlbb-light); font-size: 0.9rem;">
                 <option value="" selected disabled>ငွေလွှဲနည်းလမ်း ရွေးပါ</option>
                 <option value="wave1">WavePay - 09966744881 (8 AM - 11 PM)</option>
-                <option value="wave2">WavePay - 09661951181 (5 PM - 11 PM)</option>
+                
                 <option value="kpay">KPay - 09989310061 (9 AM - 8 PM)</option>
             </select>
             <div class="select-arrow" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--mlbb-primary);">
@@ -1309,9 +1309,7 @@ document.getElementById('purchaseForm').addEventListener('submit', async functio
         case 'wave1':
             paymentPhone = '09966744881';
             break;
-        case 'wave2':
-            paymentPhone = '09661951181';
-            break;
+        
         case 'kpay':
             paymentPhone = '09989310061';
             break;
@@ -1559,12 +1557,7 @@ document.getElementById('paymentMethod').addEventListener('change', function() {
                 accountHolder = 'Lwin Moe Aung';
                 processingTime = 'နံနက် 8 AM မှ ည 11 PM ထိအားသည်';
                 break;
-            case 'wave2':
-                methodName = 'WavePay';
-                accountNumber = '09661951181';
-                accountHolder = 'Phyo Zin Min';
-                processingTime = 'နေ့လယ် 5 PM မှ ည 11 PMထိ အားသည်';
-                break;
+            
             case 'kpay':
                 methodName = 'KPay';
                 accountNumber = '09989310061';
